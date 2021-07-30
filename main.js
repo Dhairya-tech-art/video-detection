@@ -18,7 +18,7 @@ image(video,0 ,0 ,480 ,380);
      objectDetector.detect(video,gotResult);
      for (i= 0; i<objects.length; i++){
          document.getElementById("status").innerHTML ="Status : Objects Detected";
-         document.getElementById("numgber_of_objects").innerHTML="Number of objects detected are:"+objects.length;
+         document.getElementById("number_of_objects").innerHTML="Number of objects detected are:"+objects.length;
 
          fill("#FF0000");
          percent =floor(objects[i].confidence*100);
