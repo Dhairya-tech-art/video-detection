@@ -36,6 +36,7 @@ function gotResult(error, results){
         console.log(error);
     }
     console.log(results);
+    objects=results;
 }
 function start(){
     objectDetector=ml5.objectDetector('cocossd' ,modelLoaded);
